@@ -1,5 +1,5 @@
 body{
-	font-family: $font-stack;
+	font-family: $sans-stack;
 	font-weight: 400;
 	font-size: 16px;
 	color: $dark-grey;
@@ -7,6 +7,7 @@ body{
 }
 h1,h2,h3,h4{
 	margin: 0;
+	font-family: $sans-stack;
 }
 h2{
 	font-size: 2.5rem;
@@ -23,19 +24,18 @@ header,main,section{
 	line-height: 2;
 	padding: 50px 30px 50px 30px;
 }
-a:hover{
-	color: $green;
-}
 a{
-	text-decoration: underline;
-	color: $dark-grey;
+	text-decoration: none;
+	color: inherit;
 	@include transition(all,.25s,ease-in-out);
+
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.6) 50%);
+	background-repeat: repeat-x;
+	background-size: 2px 2px;
+	background-position: 0px 18px;
 }
-div.dark--grey a:hover{
-	color: $green;
-}
-div.dark--grey a{
-	color: #fff;
+div.dark--grey a, div.green a{
+	background-image: linear-gradient(to bottom, rgba(255,255,255,0) 50%, rgba(255,255,255,0.6) 50%);
 }
 div.white{
 	background: #fff;

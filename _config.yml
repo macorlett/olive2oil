@@ -10,7 +10,7 @@ paginate: 10
 markdown: rdiscount
 permalink: pretty
 sass:
-	style: :compressed
+style: :compressed
 
 # social media links
 facebook-link: "https://www.facebook.com/pages/Olive2oil/165265686922060"

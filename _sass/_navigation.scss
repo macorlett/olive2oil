@@ -6,9 +6,13 @@ nav{
 	right: 0;
 
 	background: $dark-grey;
-	min-height: 75px;
+	//min-height: 75px;
 	width: 100%;
 	box-shadow: 0px 2px 0px rgba(0,0,0,0.3);
+	padding: 10px 0px 10px 0px;
+}
+nav .flex{
+	@include flex(0,1,960px);
 }
 .headroom{
 	@include transition(all,.45s,ease-in-out);
@@ -20,4 +24,21 @@ nav{
 .headroom--unpinned{
 	-webkit-transform: translateY(-105%);
 	transform: translateY(-105%);
+}
+.nav--logo{
+	height: 55px;
+	width: auto;
+}
+.nav--social{
+	display: inline-block;
+	float: right;
+	padding: 15px 0px 0px 0px;
+	color: rgba(0,0,0,0.5);
+}
+.nav--social a:hover{
+	color: $green;
+}
+.nav--social a{
+	background: none;
+	color: inherit;
 }
