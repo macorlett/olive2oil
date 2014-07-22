@@ -1,0 +1,153 @@
+body{
+	font-family: $font-stack;
+	font-weight: 400;
+	font-size: 16px;
+	color: $dark-grey;
+	-webkit-font-smoothing: antialiased !important;
+}
+h1,h2,h3,h4{
+	margin: 0;
+}
+h2{
+	font-size: 2.5rem;
+	line-height: 1.5;
+	font-weight: 300;
+}
+h4{
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1;
+}
+header,main,section{
+	text-align: center;
+	line-height: 2;
+	padding: 50px 30px 50px 30px;
+}
+a:hover{
+	color: $green;
+}
+a{
+	text-decoration: underline;
+	color: $dark-grey;
+	@include transition(all,.25s,ease-in-out);
+}
+div.dark--grey a:hover{
+	color: $green;
+}
+div.dark--grey a{
+	color: #fff;
+}
+div.white{
+	background: #fff;
+}
+div.green{
+	background: $green;
+	color: #fff;
+}
+div.dark--grey{
+	background: $dark-grey;
+	color: #fff;
+}
+div.light--grey{
+	background: $light-grey;
+}
+#header--home{
+	padding: 116px 0px 116px 0px;
+}
+.header--home{
+	min-height: 600px;
+	background: url(../images/hero-olives.jpg) top center;
+}
+.flex--container--down{
+	@include flex-box();
+	@include flex-flow(column,wrap);
+}
+.flex--container--across{
+	width: 100%;
+	overflow: hidden;
+
+	@include flex-box();
+	@include flex-flow(row,wrap);
+	@include justify-content(center);
+}
+.flex{
+	@include flex(0,1,660px);
+}
+.circle--container{
+	width: 220px;
+	height: 175px;
+	margin: 0px auto 0px auto;
+	padding: 85px 20px 0px 20px;
+	border-radius: 130px;
+
+	background: rgba(0,0,0,0.8);
+
+	color: #fff;
+}
+.circle--container img{
+	width: 100%;
+	max-width: 320px;
+	height: auto;
+}
+.button:hover{
+	background: darken($dark-grey, 5%);
+	color: #fff;
+}
+.button{
+	cursor: pointer;
+	display: inline-block;
+	margin: 10px auto 0px auto;
+	padding: 9px 40px 9px 40px;
+	border-radius: 60px;
+
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.125rem;
+	background: $dark-grey;
+
+	@include transition(all,.25s,ease-in-out);
+}
+.button.green:hover{
+	background: darken($green, 10%);
+	color: $dark-grey;
+}
+.button.green{
+	background: $green;
+	color: $dark-grey;
+}
+.button.white:hover{
+	color: darken($green, 10%);
+}
+.button.white{
+	background: #fff;
+	color: $green;
+}
+
+@media screen and (min-width: 600px){
+	h2{
+		font-size: 4.5rem;
+	}
+	h4{
+		font-size: 1.125rem;
+	}
+	main,section{
+		padding: 100px 0px 100px 0px;
+	}
+	.header--home{
+		min-height: 568px;
+	}
+	.circle--container{
+		width: 328px;
+		height: 238px;
+		padding: 130px 20px 0px 20px;
+		border-radius: 184px;
+	}
+	.button{
+		margin: 30px auto 0px auto;
+	}
+}
+@media screen and (min-width: 1440px){
+	.header--home{
+		background-size: 100%;
+	}
+}

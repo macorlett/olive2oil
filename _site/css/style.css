@@ -1,0 +1,193 @@
+@import url(normalize.css);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+nav {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #23262c;
+  min-height: 75px;
+  width: 100%;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3); }
+
+.headroom {
+  -webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out; }
+
+.headroom--pinned {
+  -webkit-transform: translateY(0);
+  transform: translateY(0); }
+
+.headroom--unpinned {
+  -webkit-transform: translateY(-105%);
+  transform: translateY(-105%); }
+
+body {
+  font-family: "Open Sans", Arial, Sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #23262c;
+  -webkit-font-smoothing: antialiased !important; }
+
+h1, h2, h3, h4 {
+  margin: 0; }
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-weight: 300; }
+
+h4 {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1; }
+
+header, main, section {
+  text-align: center;
+  line-height: 2;
+  padding: 50px 30px 50px 30px; }
+
+a:hover {
+  color: #97c83c; }
+
+a {
+  text-decoration: underline;
+  color: #23262c;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
+
+div.dark--grey a:hover {
+  color: #97c83c; }
+
+div.dark--grey a {
+  color: #fff; }
+
+div.white {
+  background: #fff; }
+
+div.green {
+  background: #97c83c;
+  color: #fff; }
+
+div.dark--grey {
+  background: #23262c;
+  color: #fff; }
+
+div.light--grey {
+  background: #e5e5e5; }
+
+#header--home {
+  padding: 116px 0px 116px 0px; }
+
+.header--home {
+  min-height: 600px;
+  background: url(../images/hero-olives.jpg) top center; }
+
+.flex--container--down {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -ms-flex-flow: column wrap;
+  -webkit-flex-flow: column wrap;
+  -moz-flex-flow: column wrap;
+  flex-flow: column wrap; }
+
+.flex--container--across {
+  width: 100%;
+  overflow: hidden;
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center; }
+
+.flex {
+  -ms-flex: 0 1 660px;
+  -webkit-flex: 0 1 660px;
+  -moz-flex: 0 1 660px;
+  flex: 0 1 660px; }
+
+.circle--container {
+  width: 220px;
+  height: 175px;
+  margin: 0px auto 0px auto;
+  padding: 85px 20px 0px 20px;
+  border-radius: 130px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff; }
+
+.circle--container img {
+  width: 100%;
+  max-width: 320px;
+  height: auto; }
+
+.button:hover {
+  background: #181a1e;
+  color: #fff; }
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px auto 0px auto;
+  padding: 9px 40px 9px 40px;
+  border-radius: 60px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.125rem;
+  background: #23262c;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
+
+.button.green:hover {
+  background: #7aa32e;
+  color: #23262c; }
+
+.button.green {
+  background: #97c83c;
+  color: #23262c; }
+
+.button.white:hover {
+  color: #7aa32e; }
+
+.button.white {
+  background: #fff;
+  color: #97c83c; }
+
+@media screen and (min-width: 600px) {
+  h2 {
+    font-size: 4.5rem; }
+
+  h4 {
+    font-size: 1.125rem; }
+
+  main, section {
+    padding: 100px 0px 100px 0px; }
+
+  .header--home {
+    min-height: 568px; }
+
+  .circle--container {
+    width: 328px;
+    height: 238px;
+    padding: 130px 20px 0px 20px;
+    border-radius: 184px; }
+
+  .button {
+    margin: 30px auto 0px auto; } }
+@media screen and (min-width: 1440px) {
+  .header--home {
+    background-size: 100%; } }

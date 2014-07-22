@@ -1,0 +1,46 @@
+---
+---
+
+// Style sheet for olive2oil.co.nz
+
+@import url(normalize.css);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+
+//scss
+$font-stack: 'Open Sans',Arial,Sans-serif;
+$green: #97c83c;
+$dark-grey: #23262c;
+$light-grey: #e5e5e5;
+
+@mixin flex-box(){
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+}
+@mixin flex-flow($dir,$wrap){
+	-ms-flex-flow: $dir $wrap;
+	-webkit-flex-flow: $dir $wrap;
+	-moz-flex-flow: $dir $wrap;
+	flex-flow: $dir $wrap;
+}
+@mixin justify-content($align){
+	-webkit-justify-content: $align;
+	-moz-justify-content: $align;
+	justify-content: $align;
+}
+@mixin flex($big,$sml,$size){
+	-ms-flex: $big $sml $size;
+	-webkit-flex: $big $sml $size;
+	-moz-flex: $big $sml $size;
+	flex: $big $sml $size;
+}
+@mixin transition($type,$time,$trans){
+	-webkit-transition: $type $time $trans;
+	-moz-transition: $type $time $trans;
+	-o-transition: $type $time $trans;
+	transition: $type $time $trans;
+}
+
+@import 'navigation';
+@import 'single-page';

@@ -1,0 +1,16 @@
+name: "Olive2Oil"
+decription: "The home of great tasting Extra virgin Olive oil"
+
+# url: "http://olive2oil.co.nz"
+url: "http://localhost:4001"
+port: 4001
+
+paginate: 10
+
+markdown: rdiscount
+permalink: pretty
+sass:
+	style: :compressed
+
+# social media links
+facebook-link: "https://www.facebook.com/pages/Olive2oil/165265686922060"
