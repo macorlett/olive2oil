@@ -45,6 +45,11 @@ $light-grey: #e5e5e5;
 	-moz-box-sizing: $value;
 	box-sizing: $value;
 }
+@mixin no-select(){
+	-webkit-user-select: none;       
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
 
 @import 'navigation';
 @import 'single-page';
