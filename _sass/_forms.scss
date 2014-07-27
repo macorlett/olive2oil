@@ -28,6 +28,7 @@ form {
 				text-align: left;
 				display: none;
 				opacity: 0;
+				pointer-events:none;
 				
 				@include no-select();
 				@include transition(opacity,.5s,ease-in-out);
