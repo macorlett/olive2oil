@@ -61,7 +61,30 @@
 			oil off the shelf or if you'd prefure you can ordered it straight from us via this hand form below. 
 			Just fill in all the fields and we'll get in touch with the payment details.
 			</p>
-			<a class="button green">Send order</a>
+
+			<form>
+	<input type="text" name="full-name" placeholder="Your first and last name"/>
+	<input type="email" name="email" placeholder="Email address"/>
+	<div class="product--selection">
+		<div id="250ml">
+			<input type="number" name="250-ml-bottles" min="0" max="99" step="1" placeholder="Number of 250ml bottles"/>
+		</div>
+		<div id="500ml">
+			<input type="number" name="500-ml-bottles" min="0" max="99" step="1" placeholder="Number of 500ml bottles"/>
+		</div>
+	</div>
+	<input type="text" name="delivery-address" placeholder="Delivery address"/>
+	<div class="small--fields">
+		<div>
+			<input type="text" name="region" placeholder="Region"/>
+		</div>
+		<div>
+			<input type="text" name="post-code" placeholder="Post code"/>
+		</div>
+	</div>
+	<input class="button green" type="submit" value="Send order"/>
+</form>
+
 		</section>
 		</div>
 
@@ -73,13 +96,21 @@
 			feel free to give us a buzz by filling out the form below. Also if you are interested I have our 
 			product in you shop let us know.
 			</p>
-			<a class="button white">Send message</a>
+
+			<form>
+	<input type="text" name="name" placeholder="Your name"/>
+	<input type="email" name="email" placeholder="Email address"/>
+	<textarea name="message" placeholder="Your message for us :)"></textarea>
+	<input class="button white" type="submit" value="Send message"/>
+</form>
+
 		</section>
 		</div>
 
 
 		<script src="/js/headroom.js"></script>
 		<script src="/js/scrollIt.min.js"></script>
+		<script src="/js/main.js"></script>
 
 		<script>
 			//headroom.js variables

@@ -72,7 +72,7 @@ h4 {
 header, main, section {
   text-align: center;
   line-height: 2;
-  padding: 50px 30px 50px 30px; }
+  padding: 50px 0px; }
 
 a {
   text-decoration: none;
@@ -122,6 +122,8 @@ div.light--grey {
 
 .flex--container--across {
   width: 100%;
+  max-width: 100%;
+  padding: 0px 30px;
   overflow: hidden;
   display: -ms-flex;
   display: -webkit-flex;
@@ -133,7 +135,10 @@ div.light--grey {
   flex-flow: row wrap;
   -webkit-justify-content: center;
   -moz-justify-content: center;
-  justify-content: center; }
+  justify-content: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 .flex {
   -ms-flex: 0 1 660px;
@@ -165,9 +170,11 @@ div.light--grey {
   margin: 10px auto 0px auto;
   padding: 9px 40px 9px 40px;
   border-radius: 60px;
+  border: none;
   color: #fff;
   text-decoration: none;
   font-size: 1.125rem;
+  line-height: 2rem;
   background: #23262c;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -197,7 +204,7 @@ div.light--grey {
     font-size: 1.125rem; }
 
   main, section {
-    padding: 100px 0px 100px 0px; }
+    padding: 100px 0px; }
 
   .header--home {
     min-height: 568px; }
@@ -213,3 +220,70 @@ div.light--grey {
 @media screen and (min-width: 1440px) {
   .header--home {
     background-size: 100%; } }
+form input[type="text"], form input[type="email"], form input[type="number"], form textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1rem;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  margin: 0.5rem 0rem;
+  display: inline-block; }
+form textarea {
+  height: 200px; }
+form .product--selection, form .small--fields {
+  display: inline-block;
+  width: 100%;
+  position: relative; }
+  form .product--selection div, form .small--fields div {
+    display: inherit;
+    position: inherit;
+    width: inherit; }
+    form .product--selection div div, form .small--fields div div {
+      position: absolute;
+      max-width: 140px;
+      top: 1.25rem;
+      left: 2.5rem;
+      text-align: left;
+      display: none;
+      opacity: 0;
+      -webkit-transition: opacity 0.5s ease-in-out;
+      -moz-transition: opacity 0.5s ease-in-out;
+      -o-transition: opacity 0.5s ease-in-out;
+      transition: opacity 0.5s ease-in-out; }
+form .product--selection {
+  margin: 1.5rem 0rem; }
+form ::-webkit-input-placeholder {
+  color: #000;
+  opacity: 0.5; }
+form ::-moz-placeholder {
+  color: #000;
+  opacity: 0.5; }
+form :-moz-placeholder {
+  color: #000;
+  opacity: 0.5; }
+form :-ms-input-placeholder {
+  color: #000;
+  opacity: 0.5; }
+
+.green form {
+  color: #fff; }
+  .green form input[type="text"], .green form input[type="email"], .green form input[type="number"], .green form textarea {
+    background: #97c83c;
+    border-color: #fff;
+    color: inherit; }
+
+.dark--grey form {
+  color: #9da4b1; }
+  .dark--grey form input[type="text"], .dark--grey form input[type="email"], .dark--grey form input[type="number"], .dark--grey form textarea {
+    background: #2c3037;
+    border-color: #1a1c21;
+    color: inherit; }
+
+@media screen and (min-width: 740px) {
+  form .product--selection div, form .small--fields div {
+    max-width: 323px; }
+  form .product--selection div:first-child, form .small--fields div:first-child {
+    margin-right: 10px; } }

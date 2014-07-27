@@ -40,6 +40,12 @@ $light-grey: #e5e5e5;
 	-o-transition: $type $time $trans;
 	transition: $type $time $trans;
 }
+@mixin box-sizing($value){
+	-webkit-box-sizing: $value;
+	-moz-box-sizing: $value;
+	box-sizing: $value;
+}
 
 @import 'navigation';
 @import 'single-page';
+@import 'forms';
