@@ -6,4 +6,16 @@
 }
 .flex.product--bottle{
 	@include flex(0,1,200px);
+
+	background: url(../images/product-bottle.png) center no-repeat;
+	height: 565px;
+}
+.product--text{
+	text-align: justify;
+	padding: 100px 0;
+	
+}
+
+@media screen and (min-width: 600px){
+
 }

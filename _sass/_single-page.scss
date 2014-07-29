@@ -59,6 +59,9 @@ div.light--grey{
 	min-height: 600px;
 	background: url(../images/hero-olives.jpg) top center;
 }
+.header--space{
+	height: 80px;
+}
 .flex--container--down{
 	@include flex-box();
 	@include flex-flow(column,wrap);

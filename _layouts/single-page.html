@@ -1,23 +1,20 @@
 {% include header.html %}
 		
-		<div class="flex--container--across white">
+		<div data-scroll-index="0" class="flex--container--across white">
 		
-			{% include home-top-section.html %}
+			{% include sections/home-top-section.html %}
 
 		</div>
 
-		<div class="flex--container--across light--grey">
+		<div data-scroll-index="1" class="flex--container--across light--grey">
 		<section class="flex">
-			<h2>The product</h2>
-			<p>
-			Here at Olive2Oil we pride ourselves on quality, thats why our oil has never been anying sort of 
-			a silver medal. We wouldn't want to sell it to you otherwise. Quality makes all the difference, 
-			once you try our oil you wont be able to go back to supermarket brands.
-			</p>
+			
+			{% include sections/about.html %}
+
 		</section>
 		</div>
 
-		<div data-scroll-index="0" class="flex--container--across dark--grey">
+		<div data-scroll-index="2" class="flex--container--across dark--grey">
 		<section class="flex">
 			<h2>Get our oil</h2>
 			<p>
@@ -31,7 +28,7 @@
 		</section>
 		</div>
 
-		<div class="flex--container--across green">
+		<div data-scroll-index="3" class="flex--container--across green">
 		<section class="flex">
 			<h2>Want to chat?</h2>
 			<p>

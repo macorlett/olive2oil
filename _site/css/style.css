@@ -6,10 +6,23 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  background: #23262c;
+  background: #fff;
   width: 100%;
-  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
-  padding: 10px 0px 10px 0px; }
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1); }
+
+.nav--links ul {
+  list-style: none;
+  float: right; }
+.nav--links li {
+  display: inline-block;
+  margin: 0 1rem; }
+.nav--links a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  background: none; }
+.nav--links a:hover {
+  color: rgba(0, 0, 0, 0.8); }
 
 nav .flex {
   -ms-flex: 0 1 960px;
@@ -17,11 +30,24 @@ nav .flex {
   -moz-flex: 0 1 960px;
   flex: 0 1 960px; }
 
-.headroom {
+nav.headroom {
   -webkit-transition: all 0.45s ease-in-out;
   -moz-transition: all 0.45s ease-in-out;
   -o-transition: all 0.45s ease-in-out;
-  transition: all 0.45s ease-in-out; }
+  transition: all 0.45s ease-in-out;
+  padding: 10px 30px; }
+
+.headroom--top {
+  background: #fff;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1); }
+
+.headroom--not-top {
+  background: #23262c;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3); }
+  .headroom--not-top .nav--links a {
+    color: rgba(255, 255, 255, 0.5); }
+  .headroom--not-top .nav--links a:hover {
+    color: rgba(255, 255, 255, 0.8); }
 
 .headroom--pinned {
   -webkit-transform: translateY(0);
@@ -33,7 +59,8 @@ nav .flex {
 
 .nav--logo {
   height: 55px;
-  width: auto; }
+  width: auto;
+  float: left; }
 
 .nav--social {
   display: inline-block;
@@ -109,6 +136,9 @@ div.light--grey {
 .header--home {
   min-height: 600px;
   background: url(../images/hero-olives.jpg) top center; }
+
+.header--space {
+  height: 80px; }
 
 .flex--container--down {
   display: -ms-flex;
@@ -233,7 +263,13 @@ div.light--grey {
   -ms-flex: 0 1 200px;
   -webkit-flex: 0 1 200px;
   -moz-flex: 0 1 200px;
-  flex: 0 1 200px; }
+  flex: 0 1 200px;
+  background: url(../images/product-bottle.png) center no-repeat;
+  height: 565px; }
+
+.product--text {
+  text-align: justify;
+  padding: 100px 0; }
 
 form input[type="text"], form input[type="email"], form input[type="number"], form textarea {
   width: 100%;
