@@ -1,6 +1,6 @@
 $(window).bind('load', function(){
-	$('.product--selection #250ml').append('<div>x250ml Bottles</div>');
-	$('.product--selection #500ml').append('<div>x500ml Bottles</div>');
+	$('.product--selection #250ml').append('<div unselectable="on">x250ml Bottles</div>');
+	$('.product--selection #500ml').append('<div unselectable="on">x500ml Bottles</div>');
 
 	$('#250ml input').change(function(){
 		if($('#250ml div').css('display')==='none'){

@@ -1,0 +1,9 @@
+.flex--container--across .flex--container--across{
+	padding:0;
+}
+.flex .flex{
+	@include flex(1,1,330px);
+}
+.flex.product--bottle{
+	@include flex(0,1,200px);
+}
