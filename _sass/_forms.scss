@@ -16,7 +16,7 @@ form {
 		display: inline-block;
 		width: 100%;
 		position: relative;
-		div{
+		.field--container{
 			display: inherit;
 			position: inherit;
 			width: inherit;
@@ -38,6 +38,23 @@ form {
 	.product--selection{
 		margin: 1.5rem 0rem;
 	}
+	.product--info,.product--total{
+		border-radius: 4px;
+		padding: 1rem;
+		background: #55acee;
+		color: $dark-grey;
+		.pricing{
+			display: block;
+			font-weight: 600;
+		}
+	}
+	.product--info{
+		margin-bottom: 1rem;
+	}
+	.product--total{
+		margin-top: 1rem;
+	}
+
 	::-webkit-input-placeholder{
 		color: #000;
 		opacity: 0.5;
@@ -66,19 +83,27 @@ form {
 .dark--grey form{
 	color: lighten($dark-grey, 50%);
 	input[type="text"],input[type="email"],input[type="number"],textarea{
-		background: lighten($dark-grey, 4%);
-		border-color: darken($dark-grey, 4%);
+		background: lighten($dark-grey, 10%);
+		border-color: darken($dark-grey, 5%);
 		color: inherit;
 	}
 }
 @media screen and(min-width: 740px){
 	form{
 		.product--selection,.small--fields{
-			div{
+			.field--container{
 				max-width: 323px;
 			}
-			div:first-child{
-				margin-right: 10px;
+			.field--container:last-child{
+				margin-left: 10px;
+			}
+		}
+		.product--info{
+			.pricing{
+				display: inline-block;
+				&:last-child{
+					margin-left: 9rem;
+				}
 			}
 		}
 	}

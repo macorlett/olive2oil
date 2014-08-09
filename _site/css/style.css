@@ -1,80 +1,5 @@
 @import url(normalize.css);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
-nav {
-  z-index: 10;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: #fff;
-  width: 100%;
-  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1); }
-
-.nav--links ul {
-  list-style: none;
-  float: right; }
-.nav--links li {
-  display: inline-block;
-  margin: 0 1rem; }
-.nav--links a {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  background: none; }
-.nav--links a:hover {
-  color: rgba(0, 0, 0, 0.8); }
-
-nav .flex {
-  -ms-flex: 0 1 960px;
-  -webkit-flex: 0 1 960px;
-  -moz-flex: 0 1 960px;
-  flex: 0 1 960px; }
-
-nav.headroom {
-  -webkit-transition: all 0.45s ease-in-out;
-  -moz-transition: all 0.45s ease-in-out;
-  -o-transition: all 0.45s ease-in-out;
-  transition: all 0.45s ease-in-out;
-  padding: 10px 30px; }
-
-.headroom--top {
-  background: #fff;
-  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1); }
-
-.headroom--not-top {
-  background: #23262c;
-  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3); }
-  .headroom--not-top .nav--links a {
-    color: rgba(255, 255, 255, 0.5); }
-  .headroom--not-top .nav--links a:hover {
-    color: rgba(255, 255, 255, 0.8); }
-
-.headroom--pinned {
-  -webkit-transform: translateY(0);
-  transform: translateY(0); }
-
-.headroom--unpinned {
-  -webkit-transform: translateY(-105%);
-  transform: translateY(-105%); }
-
-.nav--logo {
-  height: 55px;
-  width: auto;
-  float: left; }
-
-.nav--social {
-  display: inline-block;
-  float: right;
-  padding: 15px 0px 0px 0px;
-  color: rgba(0, 0, 0, 0.5); }
-
-.nav--social a:hover {
-  color: #97c83c; }
-
-.nav--social a {
-  background: none;
-  color: inherit; }
-
 body {
   font-family: "Open Sans", Arial, Sans-serif;
   font-weight: 400;
@@ -139,42 +64,6 @@ div.light--grey {
 
 .header--space {
   height: 80px; }
-
-.flex--container--down {
-  display: -ms-flex;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: flex;
-  -ms-flex-flow: column wrap;
-  -webkit-flex-flow: column wrap;
-  -moz-flex-flow: column wrap;
-  flex-flow: column wrap; }
-
-.flex--container--across {
-  width: 100%;
-  max-width: 100%;
-  padding: 0px 30px;
-  overflow: hidden;
-  display: -ms-flex;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: flex;
-  -ms-flex-flow: row wrap;
-  -webkit-flex-flow: row wrap;
-  -moz-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  justify-content: center;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.flex {
-  -ms-flex: 0 1 660px;
-  -webkit-flex: 0 1 660px;
-  -moz-flex: 0 1 660px;
-  flex: 0 1 660px; }
 
 .circle--container {
   width: 220px;
@@ -250,6 +139,131 @@ div.light--grey {
 @media screen and (min-width: 1440px) {
   .header--home {
     background-size: 100%; } }
+nav {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1); }
+
+.nav--links ul {
+  list-style: none;
+  float: right; }
+.nav--links li {
+  display: inline-block;
+  margin: 0 1rem; }
+.nav--links a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  background: none; }
+  .nav--links a:hover {
+    color: rgba(0, 0, 0, 0.8); }
+.nav--links a.main--action {
+  border-radius: 60px;
+  border: 1px solid #97c83c;
+  padding: 0.5rem 1.25rem;
+  color: #97c83c; }
+  .nav--links a.main--action:hover {
+    color: #7aa32e;
+    border: 1px solid #7aa32e; }
+
+nav .flex {
+  -ms-flex: 0 1 960px;
+  -webkit-flex: 0 1 960px;
+  -moz-flex: 0 1 960px;
+  flex: 0 1 960px; }
+
+nav.headroom {
+  -webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+  padding: 10px 30px; }
+
+.headroom--top {
+  background: #fff;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1); }
+
+.headroom--not-top {
+  background: #23262c;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3); }
+  .headroom--not-top .nav--links a {
+    color: rgba(255, 255, 255, 0.5); }
+    .headroom--not-top .nav--links a:hover {
+      color: rgba(255, 255, 255, 0.8); }
+  .headroom--not-top .nav--links a.main--action {
+    color: #fff;
+    border: 1px solid #fff; }
+    .headroom--not-top .nav--links a.main--action:hover {
+      color: #cccccc;
+      border: 1px solid #cccccc; }
+
+.headroom--pinned {
+  -webkit-transform: translateY(0);
+  transform: translateY(0); }
+
+.headroom--unpinned {
+  -webkit-transform: translateY(-105%);
+  transform: translateY(-105%); }
+
+.nav--logo {
+  height: 55px;
+  width: auto;
+  float: left; }
+
+.nav--social {
+  display: inline-block;
+  float: right;
+  padding: 15px 0px 0px 0px;
+  color: rgba(0, 0, 0, 0.5); }
+
+.nav--social a:hover {
+  color: #97c83c; }
+
+.nav--social a {
+  background: none;
+  color: inherit; }
+
+.flex--container--down {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -ms-flex-flow: column wrap;
+  -webkit-flex-flow: column wrap;
+  -moz-flex-flow: column wrap;
+  flex-flow: column wrap; }
+
+.flex--container--across {
+  width: 100%;
+  max-width: 100%;
+  padding: 0px 30px;
+  overflow: hidden;
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.flex {
+  -ms-flex: 0 1 660px;
+  -webkit-flex: 0 1 660px;
+  -moz-flex: 0 1 660px;
+  flex: 0 1 660px; }
+
 .flex--container--across .flex--container--across {
   padding: 0; }
 
@@ -264,12 +278,11 @@ div.light--grey {
   -webkit-flex: 0 1 200px;
   -moz-flex: 0 1 200px;
   flex: 0 1 200px;
-  background: url(../images/product-bottle.png) center no-repeat;
-  height: 565px; }
+  background: url(../images/product-bottle.png) center no-repeat; }
 
 .product--text {
   text-align: justify;
-  padding: 100px 0; }
+  position: relative; }
 
 form input[type="text"], form input[type="email"], form input[type="number"], form textarea {
   width: 100%;
@@ -288,11 +301,11 @@ form .product--selection, form .small--fields {
   display: inline-block;
   width: 100%;
   position: relative; }
-  form .product--selection div, form .small--fields div {
+  form .product--selection .field--container, form .small--fields .field--container {
     display: inherit;
     position: inherit;
     width: inherit; }
-    form .product--selection div div, form .small--fields div div {
+    form .product--selection .field--container div, form .small--fields .field--container div {
       position: absolute;
       max-width: 140px;
       top: 1.25rem;
@@ -313,6 +326,18 @@ form .product--selection, form .small--fields {
       transition: opacity 0.5s ease-in-out; }
 form .product--selection {
   margin: 1.5rem 0rem; }
+form .product--info, form .product--total {
+  border-radius: 4px;
+  padding: 1rem;
+  background: #55acee;
+  color: #23262c; }
+  form .product--info .pricing, form .product--total .pricing {
+    display: block;
+    font-weight: 600; }
+form .product--info {
+  margin-bottom: 1rem; }
+form .product--total {
+  margin-top: 1rem; }
 form ::-webkit-input-placeholder {
   color: #000;
   opacity: 0.5; }
@@ -336,12 +361,23 @@ form :-ms-input-placeholder {
 .dark--grey form {
   color: #9da4b1; }
   .dark--grey form input[type="text"], .dark--grey form input[type="email"], .dark--grey form input[type="number"], .dark--grey form textarea {
-    background: #2c3037;
-    border-color: #1a1c21;
+    background: #3a3f48;
+    border-color: #181a1e;
     color: inherit; }
 
 @media screen and (min-width: 740px) {
-  form .product--selection div, form .small--fields div {
+  form .product--selection .field--container, form .small--fields .field--container {
     max-width: 323px; }
-  form .product--selection div:first-child, form .small--fields div:first-child {
-    margin-right: 10px; } }
+  form .product--selection .field--container:last-child, form .small--fields .field--container:last-child {
+    margin-left: 10px; }
+  form .product--info .pricing {
+    display: inline-block; }
+    form .product--info .pricing:last-child {
+      margin-left: 9rem; } }
+.full--height {
+  min-height: 715px; }
+
+.center--float {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }

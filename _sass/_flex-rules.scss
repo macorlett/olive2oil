@@ -1,3 +1,21 @@
+.flex--container--down{
+  @include flex-box();
+  @include flex-flow(column,wrap);
+}
+.flex--container--across{
+  width: 100%;
+  max-width: 100%;
+  padding: 0px 30px;
+  overflow: hidden;
+
+  @include flex-box();
+  @include flex-flow(row,wrap);
+  @include justify-content(center);
+  @include box-sizing(border-box);
+}
+.flex{
+  @include flex(0,1,660px);
+}
 .flex--container--across .flex--container--across{
 	padding:0;
 }
@@ -8,11 +26,12 @@
 	@include flex(0,1,200px);
 
 	background: url(../images/product-bottle.png) center no-repeat;
-	height: 565px;
+	//height: 565px;
 }
 .product--text{
 	text-align: justify;
-	padding: 100px 0;
+  position: relative;
+	//padding: 100px 0;
 	
 }
 

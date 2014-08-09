@@ -62,24 +62,7 @@ div.light--grey{
 .header--space{
 	height: 80px;
 }
-.flex--container--down{
-	@include flex-box();
-	@include flex-flow(column,wrap);
-}
-.flex--container--across{
-	width: 100%;
-	max-width: 100%;
-	padding: 0px 30px;
-	overflow: hidden;
 
-	@include flex-box();
-	@include flex-flow(row,wrap);
-	@include justify-content(center);
-	@include box-sizing(border-box);
-}
-.flex{
-	@include flex(0,1,660px);
-}
 .circle--container{
 	width: 220px;
 	height: 175px;

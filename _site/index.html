@@ -17,8 +17,8 @@
 				<ul>
 					<li><a data-scroll-nav="0">Our Product</a></li>
 					<li><a data-scroll-nav="1">About us</a></li>
-					<li><a data-scroll-nav="2">Order</a></li>
 					<li><a data-scroll-nav="3">Contact us</a></li>
+					<li><a data-scroll-nav="2" class="main--action">Order now</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -34,19 +34,21 @@
 		</div>
 		-->
 
-		<div class="flex--container--across header--space"></div>
+		<!--<div class="flex--container--across header--space"></div>-->
 		
-		<div data-scroll-index="0" class="flex--container--across white">
+		<div data-scroll-index="0" class="flex--container--across white full--height">
 		
 			<main class="flex flex--container--across">
-	<div class="flex product--bottle"></div>
-	<div class="flex product--text">
-		<h1>Our Product</h1>
-		<p>
-			Here at Olive2Oil we pride ourselves on quality, thats why our oil has never been anying short of a silver medal. We wouldn't want to sell it to you otherwise. Quality makes all the difference, once you try our oil you wont be able to go back to supermarket brands.
-		</p>
-		<a data-scroll-nav="0" class="button dark">Try it yourself</a>
-	</div>
+  <div class="flex product--bottle"></div>
+  <div class="flex product--text">
+    <div class="center--float">
+      <h1>Our Product</h1>
+      <p>
+       Here at Olive2Oil we pride ourselves on quality, thats why our oil has never been anying short of a silver medal. We wouldn't want to sell it to you otherwise. Quality makes all the difference, once you try our oil you wont be able to go back to supermarket brands.
+      </p>
+      <a data-scroll-nav="2" class="button dark">Try it yourself</a>
+    </div>
+  </div>
 </main>
 
 		</div>
@@ -79,26 +81,57 @@
 			</p>
 
 			<form>
+	
 	<input type="text" name="full-name" placeholder="Your first and last name"/>
+	
 	<input type="email" name="email" placeholder="Email address"/>
+	
 	<div class="product--selection">
-		<div id="250ml">
+		
+		<div class="product--info">
+			<p>
+			Please select the amount of bottles you are after in the fields below.
+			</p>
+			<div class="pricing">$18 for 250ml bottles</div>
+			<div class="pricing">$30 for 500ml bottles</div>
+		</div>
+		
+		<div id="250ml" class="field--container">
 			<input type="number" name="250-ml-bottles" min="0" max="99" step="1" placeholder="Number of 250ml bottles"/>
 		</div>
-		<div id="500ml">
+		
+		<div id="500ml" class="field--container">
 			<input type="number" name="500-ml-bottles" min="0" max="99" step="1" placeholder="Number of 500ml bottles"/>
 		</div>
+
+		<!--
+		<div class="product--total">
+			<div class="sub--total">2 x 250ml bottles: $36</div>
+			<div class="sub--total">1 x 500ml bottles: $30</div>
+			<div class="total--cost">
+				3 bottles total: $66 + shipping
+			</div>
+		</div>
+		-->
+
 	</div>
+	
 	<input type="text" name="delivery-address" placeholder="Delivery address"/>
+	
 	<div class="small--fields">
-		<div>
+		
+		<div class="field--container">
 			<input type="text" name="region" placeholder="Region"/>
 		</div>
-		<div>
+		
+		<div class="field--container">
 			<input type="text" name="post-code" placeholder="Post code"/>
 		</div>
+	
 	</div>
+	
 	<input class="button green" type="submit" value="Send order"/>
+
 </form>
 
 		</section>
