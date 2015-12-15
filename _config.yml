@@ -1,16 +1,16 @@
-name: "Olive2Oil"
-decription: "The home of great tasting Extra virgin Olive oil"
+# Site settings
+title: "Olive2Oil"
+email: macorlett@gmail.com
+description: "Gold Medail winning Extra Virgin Olive Oil at its finest, grown right here in New Zealand."
+baseurl: ""
+url: "http://127.0.0.1" # the base hostname & protocol for your site
+port: 4000
+twitter: ""
+dribbble: ""
 
-# url: "http://olive2oil.co.nz"
-url: "http://localhost:4001"
-port: 4001
-
-paginate: 10
-
+# Build settings
+# paginate: 10
 markdown: rdiscount
 permalink: pretty
 sass:
 style: :compressed
-
-# social media links
-facebook-link: "https://www.facebook.com/pages/Olive2oil/165265686922060"

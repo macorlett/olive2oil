@@ -1,0 +1,145 @@
+body{
+	font-family: $sans-stack;
+	font-weight: 400;
+	font-size: 16px;
+	color: $dark-grey;
+	-webkit-font-smoothing: antialiased !important;
+}
+h1,h2,h3,h4{
+	margin: 0;
+	font-family: $sans-stack;
+}
+h2,h1{
+	font-size: 2.5rem;
+	line-height: 1.5;
+	font-weight: 300;
+}
+h4{
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1;
+}
+header,main,section{
+	text-align: center; //justify;
+	//text-align-last: center;
+	line-height: 2;
+	padding: 50px 0px;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+	@include transition(all,.25s,ease-in-out);
+
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.6) 50%);
+	background-repeat: repeat-x;
+	background-size: 2px 2px;
+	background-position: 0px 18px;
+}
+div.dark--grey a, div.green a{
+	background-image: linear-gradient(to bottom, rgba(255,255,255,0) 50%, rgba(255,255,255,0.6) 50%);
+}
+div.white{
+	background: #fff;
+}
+div.green{
+	background: $green;
+	color: #fff;
+}
+div.dark--grey{
+	background: $dark-grey;
+	color: #fff;
+}
+div.light--grey{
+	background: $light-grey;
+}
+#header--home{
+	padding: 116px 0px 116px 0px;
+}
+.header--home{
+	min-height: 600px;
+	background: url(../images/hero-olives.jpg) top center;
+}
+.header--space{
+	height: 80px;
+}
+
+.circle--container{
+	width: 220px;
+	height: 175px;
+	margin: 0px auto 0px auto;
+	padding: 85px 20px 0px 20px;
+	border-radius: 130px;
+
+	background: rgba(0,0,0,0.8);
+
+	color: #fff;
+}
+.circle--container img{
+	width: 100%;
+	max-width: 320px;
+	height: auto;
+}
+.button:hover{
+	background: darken($dark-grey, 5%);
+	color: #fff;
+}
+.button{
+	cursor: pointer;
+	display: inline-block;
+	margin: 10px auto 0px auto;
+	padding: 9px 40px 9px 40px;
+	border-radius: 60px;
+	border: none;
+
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.125rem;
+	line-height: 2rem;
+	background: $dark-grey;
+
+	@include transition(all,.25s,ease-in-out);
+}
+.button.green:hover{
+	background: darken($green, 10%);
+	color: $dark-grey;
+}
+.button.green{
+	background: $green;
+	color: $dark-grey;
+}
+.button.white:hover{
+	color: darken($green, 10%);
+}
+.button.white{
+	background: #fff;
+	color: $green;
+}
+
+@media screen and (min-width: 600px){
+	h2,h1{
+		font-size: 4.5rem;
+	}
+	h4{
+		font-size: 1.125rem;
+	}
+	main,section{
+		padding: 100px 0px;
+	}
+	.header--home{
+		min-height: 568px;
+	}
+	.circle--container{
+		width: 328px;
+		height: 238px;
+		padding: 130px 20px 0px 20px;
+		border-radius: 184px;
+	}
+	.button{
+		margin: 30px auto 0px auto;
+	}
+}
+@media screen and (min-width: 1440px){
+	.header--home{
+		background-size: 100%;
+	}
+}

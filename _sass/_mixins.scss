@@ -1,0 +1,11 @@
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+@mixin underline($size: 1.8,$color:#000){
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, rgba($color,0) 50%, rgba($color,0.6) 50%);
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+  background-position: 0px ($size + ($size / 8) + rem);
+}
